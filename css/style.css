@@ -1,0 +1,44 @@
+.img-center{
+	margin: auto;
+}
+.abs-center{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+}
+#portada{
+	background-image: url("../images/Portada/Fondo_portada.jpg");
+	background-size: auto 100%;
+	background-position: top center;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+	#portada > .container{
+		position: relative;
+		height: 100%;
+	}
+	#portada > .container > img{
+		position: absolute;
+		left: 0px;
+		right: 0px;
+	}
+	#portada > .container > #portada-titulo{top: 20%;}
+	#portada > .container > #portada-btn{top: 30%;}
+	#portada > .container > #portada-jugadores{bottom: 10px;}	
+
+@media screen and (max-height: 450px) {
+	#portada > .container > #portada-titulo{top: 10px;}
+	#portada > .container > #portada-btn{top: 75px;}
+	#portada > .container > #portada-jugadores{max-width: 170px}
+}
+
+@media screen and (min-width: 768px) {
+	#portada{
+		background-size: cover;
+	}
+	#portada > .container > #portada-titulo{top: 105px;}
+	#portada > .container > #portada-btn{top: 200px;}
+	#portada > .container > #portada-jugadores{bottom: 40px;}	
+}
