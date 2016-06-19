@@ -1,17 +1,18 @@
 $(document).ready(function(){
 	$("article").height(screenHeight());
 	$(window).resize(function(){
-		$("#portada").height(screenHeight());
+		$("article").height(screenHeight());
 	});
 	barsDisapear();
+	$("#preguntas").quizk();
 });
 
 
 function barsDisapear(){
 	$("#nav-bar-stats").remove();
 	$("#mobile-horizontal-menu").remove();
-	$("#top-bar-wrapper").remove();
-	$("#mobilemenu").remove();
+	//$("#top-bar-wrapper").remove();
+	//$("#mobilemenu").remove();
 }
 function screenHeight(){
 	var height = $(window).height();
