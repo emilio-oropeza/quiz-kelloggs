@@ -13,6 +13,9 @@ article{
 	overflow: hidden;
 	font-family: "Roboto", sans-serif;
 }
+section{
+	height: 100%;
+}
 #portada{
 	background-image: url("../images/Portada/Fondo_portada.jpg");
 	background-size: auto 100%;
